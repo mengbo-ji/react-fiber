@@ -1,0 +1,36 @@
+{
+  "name": "react-fiber",
+  "version": "1.0.0",
+  "description": "react-fiber 实现",
+  "main": "babel.config.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server-compile": "webpack --config webpack.config.server.js --watch",
+    "dev:server": "nodemon ./build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengbo-ji/react-fiber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mengbo-ji/react-fiber/issues"
+  },
+  "homepage": "https://github.com/mengbo-ji/react-fiber#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.14",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
