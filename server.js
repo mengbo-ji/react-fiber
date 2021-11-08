@@ -1,6 +1,7 @@
 import express from 'express';
 
 const app = express();
+app.use(express.static('dist'))
 
 const template = `
   <html>
@@ -9,6 +10,7 @@ const template = `
     </head>
     <body>
       <div id="root"></div>
+      <script src="bundle.js"></script>
     </body>
   </html>
 `
